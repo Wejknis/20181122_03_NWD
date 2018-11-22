@@ -7,7 +7,7 @@ int main() {
     printf("Podaj b: "); scanf("%d", &b);
 
     do {
-       if (a < b) { b -= a; } else { a -=b; }
+       a < b ? b -= a : (a -=b);
     } while (a != b);
 
     printf("Wynik: %d, a");
